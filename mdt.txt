@@ -1,0 +1,17 @@
+0: DATA1 &A, &B, &C
+1: L 2, &A
+2: ST 2, &B
+3: MEND
+4: C &X, &Y
+5: L 2, &X
+6: ST 2, &Y
+7: MEND
+8: ADD2 &X, &Y, &C
+9: L 1, &X
+10: A2 1, &Y
+11: ST 1, &C
+12: MEND
+13: MAC1 &ARG1 &ARG2
+14: LD &ARG1
+15: ST &ARG2
+16: MEND

@@ -1,0 +1,29 @@
+MACRO
+DATA1 &A, &B, &C
+L 2, &A
+ST 2, &B
+MEND
+
+MACRO
+C &X, &Y
+L 2, &X
+ST 2, &Y
+MEND
+
+MACRO
+ADD2 &X, &Y, &C
+L 1, &X
+A2 1, &Y
+ST 1, &C
+MEND
+
+START
+L 4, K
+DATA1 A, B, C
+ST 4, P
+DATA1 C, B, A
+L 4, J
+C A, C
+ADD2 R, R, R
+L 4, B
+END
